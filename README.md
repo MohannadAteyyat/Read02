@@ -1,4 +1,5 @@
 # Git Tutorial: A Comprehensive Guide
+![Git](https://codexitos.com/wp-content/uploads/2019/10/blog-What-is-github-and-why-you-should-use-it..png)
 * In order to explain Git, we have to first explain various aspects of Version Control.
 ## Version Control 
 * Version Control is a system that allows you to revisit various versions of a file or set of files by recording changes. Through version control, one can revert a file or project to a previous version, track modifications and modifying individuals, and compare changes. By utilizing a Version Control System (VCS), mistakes with files can easily be rectified.
@@ -22,4 +23,42 @@
 * Files in Git can reside in three main states: committed, modified and staged.
 ## History of Git
 * Git traces its roots to the open source software project Linux kernel. Developers of this project began using a DVCS called BitKeeper in 2002. In 2005, many of these developers stopped using this DVCS due to tension between the Linux kernel community and the company behind BitKeeper’s and the eventual revocation of the DVCS’ gratis status. Subsequently, Linus Torvalds, the chief architect of the Linux kernel, began creating Git. With the intention of creating a DVCS with a workflow design similar to that of BitKeeper, which was also fast, Git allowed for non-linear development via multiple branches, could support large projects, possessed strong mechanisms preventing corruption, and had a simple design. Since its inception in 2005, Git has become one of the most utilized Version Control Systems in the world.
+
 * [More History](GitHistory.md)
+![ BitKeeper ](https://www.bitkeeper.org/man/BitKeeper_SN_SVC_Blue.png)
+![DVCS ](https://miro.medium.com/max/3396/1*gPBljo_uRh-IBtHY2oB7ig.png)
+## Getting Started 
+### Download Git
+* [You can also download Git by visiting this link and following the posted directions for mac:](http://git-scm.com/download/mac)
+* [You can also download Git by visiting this link and following the posted directions for windows](http://git-scm.com/download/win)
+* [You can also download Git by visiting this link and following the posted directions for Linux](http://git-scm.com/download/linux)
+## Initial Customization
+* perform some customization steps, which should only need to be completed once on any machine.
+### Configuration of Variables
+### Identity Setting
+### Getting Help
+* There are three ways to get more information on a particular command, by accessing the manual:
+
+1. git help command
+
+2. git command --help
+
+3. man git-command
+
+## Setting up a Git Repository
+###Importing 
+* To import an existing project or directory into Git, follow these steps using the Terminal or Command Line:
+1. Switch to the target project’s directory
+2. Use the git init command
+3. To start tracking these repository files, perform an initial commit by typing the following:
+* $ git add *.c
+* $ git add LICENSE
+* $ git commit -m “any message here”
+###Cloning
+* By cloning the file, you have copied all versions of all files for a project.
+## Workflow
+### Local Repository Structure
+* The local Git repository has three components:
+1. Working Directory: The actual files reside here.
+2. Index: The area used for staging
+3. Head: Points to the most recent commit
