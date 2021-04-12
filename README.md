@@ -25,7 +25,7 @@
 * Git traces its roots to the open source software project Linux kernel. Developers of this project began using a DVCS called BitKeeper in 2002. In 2005, many of these developers stopped using this DVCS due to tension between the Linux kernel community and the company behind BitKeeper’s and the eventual revocation of the DVCS’ gratis status. Subsequently, Linus Torvalds, the chief architect of the Linux kernel, began creating Git. With the intention of creating a DVCS with a workflow design similar to that of BitKeeper, which was also fast, Git allowed for non-linear development via multiple branches, could support large projects, possessed strong mechanisms preventing corruption, and had a simple design. Since its inception in 2005, Git has become one of the most utilized Version Control Systems in the world.
 
 * [More History](GitHistory.md)
-![ BitKeeper ](https://www.bitkeeper.org/man/BitKeeper_SN_SVC_Blue.png)
+![BitKeeper](https://www.bitkeeper.org/man/BitKeeper_SN_SVC_Blue.png)
 ![DVCS ](https://miro.medium.com/max/3396/1*gPBljo_uRh-IBtHY2oB7ig.png)
 ## Getting Started 
 ### Download Git
@@ -62,3 +62,21 @@
 1. Working Directory: The actual files reside here.
 2. Index: The area used for staging
 3. Head: Points to the most recent commit
+### Saving Changes
+* Tracked files can be modified, unmodified, or staged; they were part of the most recent file snapshot.
+* Untracked files were not in the last snapshot and do not currently reside in the staging area.
+### The Life Cycle of File Status
+![Image](https://blog.udemy.com/wp-content/uploads/2015/08/image006.png)
+### Check File Status
+* To determine the state of files, utilize the git status command: $ git status
+### Tracking and Staging a New File
+* Track one file only by using the following format: git add filename
+* Track all files in a repository by using the following command: $ git add *
+### Committing a File
+* After staging one or multiple files, you should commit the changes and record what you did within the commit message: $ git commit -m “made change x,y,z”
+### Committing All Changes 
+* Type : $ git commit -a
+### Pushing Changes 
+* Next, you would push changes to a remote repository. We will discuss remote repositories in more depth in the next section. For now, we will look at a general overview of pushing changes to remotes.
+### Stashing Changes 
+* When you are not ready to commit changes but do not want to lose them either, git stash is a great option. This command temporarily removes changes and hides them, giving you a clean working directory. When you are ready to continue working on the changes, simply use the git stash apply command to retrieve the hidden changes.
